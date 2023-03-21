@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/implantMainFragment">
+
+    <fragment
+        android:id="@+id/implantMainFragment"
+        android:name="com.example.implant2.ImplantMainFragment"
+        android:label="ИМПЛАНТАЦИЯ"
+        tools:layout="@layout/fragment_implant_main" >
+        <action
+            android:id="@+id/action_implantMainFragment_to_implant1Fragment"
+            app:destination="@id/implant1Fragment" />
+        <action
+            android:id="@+id/action_implantMainFragment_to_implant2Fragment"
+            app:destination="@id/implant2Fragment" />
+        <action
+            android:id="@+id/action_implantMainFragment_to_implant3Fragment"
+            app:destination="@id/implant3Fragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/implant1Fragment"
+        android:name="com.example.implant2.Implant1Fragment"
+        android:label="ИМПЛАНТАЦИЯ"
+        tools:layout="@layout/fragment_implant1" >
+        <action
+            android:id="@+id/action_implant1Fragment_to_implantMainFragment"
+            app:destination="@id/implantMainFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/implant2Fragment"
+        android:name="com.example.implant2.Implant2Fragment"
+        android:label="ИМПЛАНТАЦИЯ"
+        tools:layout="@layout/fragment_implant2" >
+        <action
+            android:id="@+id/action_implant2Fragment_to_implantMainFragment"
+            app:destination="@id/implantMainFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/implant3Fragment"
+        android:name="com.example.implant2.Implant3Fragment"
+        android:label="ИМПЛАНТАЦИЯ"
+        tools:layout="@layout/fragment_implant3" >
+        <action
+            android:id="@+id/action_implant3Fragment_to_implantMainFragment"
+            app:destination="@id/implantMainFragment" />
+    </fragment>
+</navigation>

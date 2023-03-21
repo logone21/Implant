@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Implant1Fragment"
+
+    android:background="@color/blue">
+
+    <ImageView
+        android:id="@+id/implant1"
+        android:layout_width="410dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/implant1"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/implant1Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/black"
+        android:text="Записаться"
+        android:textSize="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/implant1"
+        app:layout_constraintTop_toBottomOf="@id/implant1" />
+
+    <TextView
+        android:id="@+id/implant1text1"
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="ИМПЛАНТАЦИЯ ЗУБОВ"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@id/implant1"
+        app:layout_constraintTop_toBottomOf="@id/implant1" />
+
+    <TextView
+        android:id="@+id/implant1text2"
+        android:layout_width="390dp"
+        android:layout_height="170dp"
+        android:text="Имплантация – лучшее решение проблемы отсутствия зубов. Вживленный имплант очень сложно отличить от натурального зуба. Если при установке имплантата все технологии соблюдены, то он будет с вами всю жизнь! При изготовлении имплантата используют специальный титановый стержень."
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="@id/implant1"
+        app:layout_constraintTop_toBottomOf="@id/implant1text1"/>
+    
+    <TextView
+        android:id="@+id/implant1Price"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="Цены:"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/implant1text2"
+        app:layout_constraintStart_toStartOf="@id/implant1text2"
+        />
+    <TextView
+        android:id="@+id/implant1Price2"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:text="1000сом"
+        android:textColor="@color/black"
+        android:layout_marginTop="1dp"
+        app:layout_constraintTop_toBottomOf="@id/implant1Price"
+        app:layout_constraintStart_toStartOf="@id/implant1Price"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

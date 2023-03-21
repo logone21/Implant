@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Implant2Fragment"
+    android:background="@color/blue">
+
+    <ImageView
+        android:id="@+id/implant2"
+        android:layout_width="410dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/implant2"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/implant2Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/black"
+        android:text="Записаться"
+        android:textSize="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/implant2"
+        app:layout_constraintTop_toBottomOf="@id/implant2" />
+
+    <TextView
+        android:id="@+id/implant2text1"
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="ИМПЛАНТАЦИЯ ЗУБОВ БЕЗ РАЗРЕЗА"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@id/implant2"
+        app:layout_constraintTop_toBottomOf="@id/implant2" />
+
+    <TextView
+        android:id="@+id/implant2text2"
+        android:layout_width="390dp"
+        android:layout_height="170dp"
+        android:text="На самом деле, потеря даже одного зуба не так безобидна, как может показаться. Вместе с общим дискомфортом появляются проблемы, как с жевательной функцией, так и с пищеварением. Но не стоит расстраиваться раньше времени – вернуть красивую здоровую улыбку можно при помощи имплантации зубов."
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="@id/implant2"
+        app:layout_constraintTop_toBottomOf="@id/implant2text1"/>
+
+    <TextView
+        android:id="@+id/implant2Price"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="Цены:"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/implant2text2"
+        app:layout_constraintStart_toStartOf="@id/implant2text2"
+        />
+    <TextView
+        android:id="@+id/implant2Price2"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:text="1000сом"
+        android:textColor="@color/black"
+        android:layout_marginTop="1dp"
+        app:layout_constraintTop_toBottomOf="@id/implant2Price"
+        app:layout_constraintStart_toStartOf="@id/implant2Price"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

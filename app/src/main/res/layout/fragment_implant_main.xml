@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ImplantMainFragment"
+    android:background="@color/blue">
+
+
+    <ImageButton
+        android:id="@+id/fragment1Bta"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="385dp"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="12sp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/implant_main1"
+        android:contentDescription=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/fragment2Bta"
+        android:src="@drawable/implant_main2"
+        android:layout_width="385dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@id/fragment1Bta"
+        tools:layout_editor_absoluteX="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
+
+    <ImageButton
+        android:id="@+id/fragment3Bta"
+        android:src="@drawable/implant_main3"
+        android:layout_width="385dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@id/fragment2Bta"
+        tools:layout_editor_absoluteX="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
